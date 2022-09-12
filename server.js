@@ -28,7 +28,7 @@ app.listen(port, () => {
 
 // Get Data From The Server
 
-app.get('/getData', (req, res) => {
+app.get('/getData', (_req, res) => {
     res.send(projectData);
 })
 
@@ -39,4 +39,4 @@ app.post('/postData', (req, res) => {
     res.send({
         message: "The message is sent"
     });
-})
+}) 
