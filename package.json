@@ -1,0 +1,20 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bisho515/weather-journal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bisho515/weather-journal-website/issues"
+  },
+  "homepage": "https://github.com/bisho515/weather-journal-website#readme"
+}
