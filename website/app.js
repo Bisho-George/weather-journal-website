@@ -3,26 +3,22 @@ const API_KEY = ',&appid=f953b433bf8dd4629aa8b532a2a18594&units=metric';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather?zip=';
 const generate = document.getElementById('generate');
 const entry = document.querySelector('.entryHolder');
-const server = 'http://localhost:5000/';
+const server = 'http://localhost:5000';
 // Create a new date instance dynamically with JS
 const date = new Date();
 const now = date.toDateString();
 
 const generateData = () => {
     const zip = document.getElementById('zip');
-    const feelings = document.getElementById('feelings');
+    const feelings = document.getElementById('feelings').value;
     getWeatherTem(BASE_URL, zip.value, API_KEY).then(data => {
         if (data) {
             const {
                 main: { temp },
-                name: city,
-                weather: [{ description }],
             } = data;
             const info = {
                 now,
-                city,
                 temp: Math.round(temp),
-                description,
                 feelings,
             };
             sendData(server + '/postData', info);

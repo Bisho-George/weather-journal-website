@@ -21,4 +21,5 @@ openweathermap api
  get the weather of any country with the zip code with nice GUI
 
  ## Dependencies: 
-    none
+    body-parser
+    cors
